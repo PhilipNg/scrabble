@@ -115,6 +115,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bag.h" />
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="IO.h" />
+    <ClInclude Include="Move.h" />
+    <ClInclude Include="rack.h" />
+    <ClInclude Include="Score.h" />
+    <ClInclude Include="Tile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
