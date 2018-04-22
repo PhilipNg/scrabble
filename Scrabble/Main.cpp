@@ -33,6 +33,7 @@ int main() {
 			isValid = rack.isValid(m.word) && dict.isValid(m.word);
 		}
 
+		rack.replaceLetters(m.word, bag.drawLetters(m.word.size()));
 		b.addWord(m.word, m.x, m.y, m.isVertical);
 		system("cls");
 	}

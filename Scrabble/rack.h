@@ -1,10 +1,13 @@
 #pragma once
 #include <string>
+#include "Bag.h"
+#include "Move.h"
 using namespace std;
 
 class Rack
 {
 public:
+	
 	Rack(string letters) {
 		letters_ = letters;
 	}
@@ -38,6 +41,21 @@ public:
 		}
 		return true;
 	}
+
+	void replaceLetters(string remove,string add)
+	{
+		
+		for (int i =0; i<remove.size();i++)
+		{
+			int pos = letters_.find(remove.at(i));
+		 
+			letters_.at(pos) = add.at(i);
+
+		}
+
+	}
+	
+
 
 private:
 	string letters_;

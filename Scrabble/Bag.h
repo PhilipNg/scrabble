@@ -4,9 +4,10 @@
 #include <random>
 #include <vector>
 
+
 using namespace std;
 
-class Bag 
+class Bag
 {
 public:
 	Bag()
@@ -40,14 +41,15 @@ public:
 		letters.append(2, ' ');
 
 	}
-	
+
 	string drawLetters(int numberOfLetters)
 	{
 		shuffle(letters.begin(), letters.end(), engine);
-		string selection = letters.substr(100 - numberOfLetters);
-		letters.erase(100 - numberOfLetters);
+		string selection = letters.substr(letters.size() - numberOfLetters);
+		letters.erase(letters.size() - numberOfLetters);
 		return selection;
 	}
+
 private:
 	string letters;
 	mt19937 engine;
